@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Pleysteichon 5",
+    "price": 1000
+  },
+  {
+    "id": 2,
+    "name": "Abrigo Navy",
+    "price": 400
+  },
+  {
+    "id": 3,
+    "name": "Horno para pizza",
+    "price": 300
+  },
+  {
+    "id": 4,
+    "name": "Chaqueton grande para el frio",
+    "price": 69
+  }
+]

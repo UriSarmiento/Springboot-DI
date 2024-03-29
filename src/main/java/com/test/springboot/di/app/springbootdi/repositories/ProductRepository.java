@@ -1,12 +1,18 @@
 package com.test.springboot.di.app.springbootdi.repositories;
 
 import com.test.springboot.di.app.springbootdi.models.Product;
-import com.test.springboot.di.app.springbootdi.repositories.irepository.IProductRespository;
+import com.test.springboot.di.app.springbootdi.repositories.irepository.IProductRepository;
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.context.annotation.RequestScope;
 
 import java.util.Arrays;
 import java.util.List;
 
-public class ProductRepository implements IProductRespository {
+@Primary
+@Repository("productList")
+@RequestScope //Para que dure nadamas durante un request
+public class ProductRepository implements IProductRepository {
     private List<Product> data;
 
     public ProductRepository() {
